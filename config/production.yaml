@@ -2,7 +2,7 @@
 providers:
   config:
     class: octodns.provider.yaml.YamlProvider
-    directory: /
+    directory: ./
     enforce_order: False
   cloudflare:
     class: octodns_cloudflare.CloudflareProvider
