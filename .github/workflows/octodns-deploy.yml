@@ -18,15 +18,13 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install OctoDNS Cloudflare
-        run: pip install octodns-cloudflare
-        
-      - name: Install OctoDNS
-        run: pip install octodns
+      - name: Install OctoDNS and Cloudflare provider
+        run: |
+          pip install octodns
+          pip install octodns-cloudflare
 
       - name: Sync DNS with OctoDNS
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
           octodns-sync --config-file=config.yaml
-
