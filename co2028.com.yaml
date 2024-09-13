@@ -1,1 +1,10 @@
-DNS CONFIG HERE
+---
+# Managed DNS zone for yourdomain.com
+ttl: 3600
+type: A
+values:
+  - name: www
+    type: A
+    ttl: 300
+    value: 192.0.2.1
+
