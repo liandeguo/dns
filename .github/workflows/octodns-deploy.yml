@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install OctoDNS Cloudflare
+        run: pip install octodns-cloudflare
+        
       - name: Install OctoDNS
         run: pip install octodns
 
