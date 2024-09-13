@@ -19,7 +19,7 @@ jobs:
       - name: Install OctoDNS-Cloudflare
         run: pip install octodns-cloudflare
       - name: Sync w/ production DNS providers
-        run: ./bin/sync
+        run: /bin/sync
         env:
           CLOUDFLARE_EMAIL: ${{ secrets.CLOUDFLARE_EMAIL }}
           CLOUDFLARE_TOKEN: ${{ secrets.CLOUDFLARE_TOKEN }}
