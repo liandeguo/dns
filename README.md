@@ -1,22 +1,18 @@
-#co2028.com's DNS
+# co2028.com's DNS
 Dieses Repository beinhaltet die DNS Einstellung für die Domain co2028.com
 
-## Wie bekomme ich eine subdomain?
-1. 
-
-
-1. [Create a fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) of this repository.
-2. In your fork open the [hackclub.com.yaml](./hackclub.com.yaml) file and add the following alphabetically based off the subdomain name:
-
+## Wie bekomme ich eine Sub-Domain?
+1. [Mache ein Fork](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) von diesem Repository.
+2. In deinem Fork öffnest du nun die Datei [co2028.com.yaml](./2028.com.yaml) und fügst folgendes hinzu:
 ```yaml
 SUBDOMAIN_NAME:
   - ttl: 600
     type: CNAME
     value: SOURCE_DOMAIN_OR_IP.
 ```
+3. Ersetze 'SUBDOMAIN_NAME' mit dem namen deiner sub-domain. Also wenn der Name 'hello' wäre, wäre die sub-domain 'hello.co2028.com'.
+4. Ersetze 'SOURCE_DOMAIN_OR_IP' mit der Domain oder IP-Adresse der Website für die du die sub-domain haben möchtest. Wenn du eie IP-Adresse benutzt änder 'type: CNAME' zu 'type: A'. Denke daran, dass du den '.' am Ende lässt!
+5. Mache ein Commit für deine Änderung und [erstelle ein PR](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)!
 
-3. Replace `SUBDOMAIN_NAME` with the name of the sub-domain. So if the name was `hello` then the subdomain would be `hello.hackclub.com`.
-4. Replace `SOURCE_DOMAIN_OR_IP` with the domain or IP address of the website you want the subdomain to go. If you are using an IP address change `type: CNAME` to `type: A`. Remember to leave that `.` at the end!
-5. Commit your changes and [create the PR](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork)!
+Das wäre es, jetzt warte bis ich mir deine Änderung angucke und zulasse!
 
-That's it! Someone with contributor access to the repo will then review your PR.
