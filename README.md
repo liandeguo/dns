@@ -1,4 +1,6 @@
 # co2028.com's DNS
+[![deploy](https://github.com/liandeguo/dns/actions/workflows/deploy.yml/badge.svg)](https://github.com/liandeguo/dns/actions/workflows/deploy.yml)
+
 Dieses Repository beinhaltet die DNS Einstellung für die Domain co2028.com
 
 ## Wie bekomme ich eine Sub-Domain?
