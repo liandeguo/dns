@@ -1,10 +1,15 @@
 ---
-# Managed DNS zone for yourdomain.com
-ttl: 3600
-type: A
-values:
-  - name: www
-    type: A
-    ttl: 300
-    value: 192.0.2.1
-
+"":
+  - type: A
+    value: 76.76.21.21
+  - type: MX
+    ttl: 600
+    values:
+      - exchange: fwd2.porkbun.com.
+        preference: 1
+      - exchange: fwd1.porkbun.com.
+        preference: 1
+www:
+  - type: CNAME
+    value: cname.vercel-dns.com.
+    ttl: 600
