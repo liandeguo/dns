@@ -13,7 +13,3 @@ www:
   - type: CNAME
     value: cname.vercel-dns.com.
     ttl: 600
-test:
-  - type: CNAME
-    value: google.com.
-    ttl: 600
