@@ -15,5 +15,6 @@ www:
     ttl: 600
 mc:
   - type: A
+    proxied: true
     value: 77.21.101.144
 
