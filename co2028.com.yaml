@@ -13,3 +13,7 @@ www:
   - type: CNAME
     value: cname.vercel-dns.com.
     ttl: 600
+mc:
+  - type: A
+    value: 77.21.101.144
+
